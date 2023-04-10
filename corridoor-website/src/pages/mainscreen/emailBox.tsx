@@ -11,6 +11,20 @@ const EmailBox: React.FC = () => {
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
+
+    // Check if the input text is empty
+    if (!text.trim()) {
+      alert("Please enter an email address.");
+      return;
+    }
+
+    // Validate email format using a regular expression
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(text)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
     // Access the 'emails' collection in Firestore
     const emailsCollection = collection(db, "emails");
 
@@ -22,12 +36,12 @@ const EmailBox: React.FC = () => {
       // Email does not exist in the collection, so save the input value to Firestore
       await addDoc(emailsCollection, { email: text });
       // Display a success message
-      alert("Email saved to Firestore successfully!");
+      alert("Congrats! You're on the waitlist!");
       // Clear the input field
       setText("");
     } else {
       // Display a message indicating that the email already exists
-      alert("This email already exists in the database.");
+      alert("You're already on the waitlist!");
     }
   };
 
