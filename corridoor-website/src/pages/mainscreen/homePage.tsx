@@ -15,6 +15,8 @@ const HomePage: React.FC = () => {
       >
         <h1 className="font-bold text-center text-6xl md:text-6xl lg:text-9xl">Corridoor</h1>
         <div className="mt-8 text-2xl md:text-3xl lg:text-5xl">Find your way.</div>
+        <div className="mt-8 text-xl text-center px-10 md:text-1xl lg:text-3xl text-gray-200">Corridoor is an indoor navigation application that will be coming to the University of Michigan & beyond this upcoming school year! You will never be late to class again!</div>
+
         <div className="mt-8 md:mt-12 lg:mt-16 text-lg md:text-xl lg:text-xl">Join the waitlist!</div>
         <div className="mt-4 md:mt-6 lg:mt-8 w-full md:w-auto">
           <EmailBox />
