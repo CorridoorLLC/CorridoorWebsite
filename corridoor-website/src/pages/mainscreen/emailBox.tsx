@@ -57,7 +57,7 @@ const EmailBox: React.FC = () => {
         />
         <button
           type="submit"
-          className="w-full duration-700 py-2 text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus:bg-indigo-700 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+          className="w-full duration-700 py-2 text-white bg-indigo-500 rounded-md hover:bg-indigo-900 focus:bg-indigo-700 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
         >
           Submit
         </button>
