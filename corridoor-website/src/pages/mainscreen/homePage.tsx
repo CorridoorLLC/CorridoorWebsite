@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
         <h1 className="uppercasefont-extrabold font-black text-center text-7xl md:text-8xl lg:text-9xl">
           Corridoor
         </h1>
-        <div className="font-bold	italic mt-8 mb-4text-2xl md:text-3xl lg:text-5xl">
+        <div className="font-bold	italic mt-8 mb-4 text-2xl md:text-3xl lg:text-5xl">
           Find your way.
         </div>
         <div className="mt-8 text-xl text-center px-10 md:text-1xl lg:text-3xl text-gray-200">
