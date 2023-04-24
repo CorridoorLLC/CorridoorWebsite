@@ -2,9 +2,11 @@ import React from "react";
 import { Fragment } from "react";
 import EmailBox from "./emailBox";
 import Logo from "../imageComponents/logo";
+import LoginPopup from "./loginPopup";
 const HomePage: React.FC = () => {
   return (
     <Fragment>
+      {/* <LoginPopup /> */}
       <div
         className="
           h-screen
@@ -17,7 +19,8 @@ const HomePage: React.FC = () => {
         <div className="font-bold	italic mt-8 mb-4 text-2xl md:text-2xl lg:text-4xl">
           Find your way.
         </div>
-        <div className="mt-8 w-3/6 text-xl text-center px-10 md:text-1xl lg:text-3xl text-gray-200">
+        {/* Add responsive width classes to the text section */}
+        <div className="mt-8 w-full md:w-3/4 lg:w-1/2 text-xl text-center px-10 md:text-1xl lg:text-3xl text-gray-200">
           Corridoor is an indoor navigation application that will be coming to
           the University of Michigan & beyond this upcoming school year! You
           will never be late to class again!
