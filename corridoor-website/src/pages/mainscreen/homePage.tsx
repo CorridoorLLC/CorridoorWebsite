@@ -1,7 +1,7 @@
 import React from "react";
 import { Fragment } from "react";
 import EmailBox from "./emailBox";
-
+import Logo from "../imageComponents/logo";
 const HomePage: React.FC = () => {
   return (
     <Fragment>
@@ -13,13 +13,11 @@ const HomePage: React.FC = () => {
           px-4 // Add padding on the x-axis for small screens
         "
       >
-        <h1 className="uppercasefont-extrabold font-black text-center text-7xl md:text-8xl lg:text-9xl">
-          Corridoor
-        </h1>
-        <div className="font-bold	italic mt-8 mb-4 text-2xl md:text-3xl lg:text-5xl">
+        <Logo />
+        <div className="font-bold	italic mt-8 mb-4 text-2xl md:text-2xl lg:text-4xl">
           Find your way.
         </div>
-        <div className="mt-8 text-xl text-center px-10 md:text-1xl lg:text-3xl text-gray-200">
+        <div className="mt-8 w-3/6 text-xl text-center px-10 md:text-1xl lg:text-3xl text-gray-200">
           Corridoor is an indoor navigation application that will be coming to
           the University of Michigan & beyond this upcoming school year! You
           will never be late to class again!
