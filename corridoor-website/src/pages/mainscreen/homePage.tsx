@@ -2,7 +2,6 @@ import React from "react";
 import { Fragment } from "react";
 import EmailBox from "./emailBox";
 import Logo from "../imageComponents/logo";
-import LoginPopup from "./loginPopup";
 const HomePage: React.FC = () => {
   return (
     <Fragment>
