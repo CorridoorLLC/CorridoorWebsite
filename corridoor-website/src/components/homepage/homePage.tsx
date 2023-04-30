@@ -15,7 +15,7 @@ const HomePage: React.FC = () => {
           px-4 // Add padding on the x-axis for small screens
         "
       >
-        <div className="lg:pt-14 sm:pt-4">
+        <div className="lg:pt-14 md:pt-14 sm:pt-8 pt-8" >
           <Logo />
         </div>
         <div className="font-bold	italic mt-8 mb-4 text-2xl md:text-2xl lg:text-4xl">
