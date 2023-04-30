@@ -34,6 +34,9 @@ const HomePage: React.FC = () => {
             <EmailBox />
           </div>
         </div>
+        <div className="pt-3">
+          <text>Terms And Conditions</text>
+        </div>
       </div>
     </Fragment>
   );

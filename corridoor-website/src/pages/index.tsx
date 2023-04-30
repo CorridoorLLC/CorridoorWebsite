@@ -1,4 +1,4 @@
-import HomePage from './mainscreen/homePage';
+import HomePage from '../components/homepage/homePage';
 import { useRouter } from 'next/router';
 import Dashboard from './dashboard';
 
