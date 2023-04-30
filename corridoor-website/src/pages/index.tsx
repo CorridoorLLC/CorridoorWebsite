@@ -1,7 +1,7 @@
 import HomePage from '../components/homepage/homePage';
 import { useRouter } from 'next/router';
 import Dashboard from './dashboard';
-
+import Terms from './terms';
 export default function Home() {
   // Use the useRouter hook to access the router object
   const router = useRouter();
@@ -13,6 +13,7 @@ export default function Home() {
     <div className="radial-gradient(at right top, rgb(88, 28, 135), rgb(192, 38, 211), rgb(157, 23, 77))">
       {currentPath === '/' && <HomePage />}
       {currentPath === '/dashboard' && <Dashboard />}
+      {currentPath === '/terms' && <Terms />}
     </div>
   );
 }

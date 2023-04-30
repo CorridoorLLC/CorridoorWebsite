@@ -2,6 +2,7 @@ import React from "react";
 import { Fragment } from "react";
 import EmailBox from "./emailBox";
 import Logo from "../imageComponents/logo";
+import Link from "next/link";
 const HomePage: React.FC = () => {
   return (
     <Fragment>
@@ -10,7 +11,7 @@ const HomePage: React.FC = () => {
         className="
           h-screen
           flex flex-col items-center justify-center
-          bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-900 via-fuchsia-600 to-pink-800
+          bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-700 via-pink-500 to-red-500
           px-4 // Add padding on the x-axis for small screens
         "
       >
@@ -19,7 +20,7 @@ const HomePage: React.FC = () => {
           Find your way.
         </div>
         {/* Add responsive width classes to the text section */}
-        <div className="mt-8 w-full md:w-3/4 lg:w-1/2 text-xl text-center px-10 md:text-1xl lg:text-3xl text-gray-200">
+        <div className="mt-8 w-full md:w-3/4 lg:w-1/2 text-xl text-center px-10 md:text-1xl lg:text-3xl text-gray-100">
           Corridoor is an indoor navigation application that will be coming to
           the University of Michigan & beyond this upcoming school year! You
           will never be late to class again!
@@ -35,7 +36,11 @@ const HomePage: React.FC = () => {
           </div>
         </div>
         <div className="pt-3">
-          <text>Terms And Conditions</text>
+          <p>
+            <Link href="/terms">
+              Terms of Service
+            </Link>
+          </p>
         </div>
       </div>
     </Fragment>
