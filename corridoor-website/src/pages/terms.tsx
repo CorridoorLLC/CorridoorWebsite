@@ -11,8 +11,8 @@ const Terms: React.FC<PrivacyProps> = ({
 }) => {
   return (
     <Fragment>
-      <div className="h-screen bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-700 via-pink-500 to-red-500 flex flex-col items-center justify-center pt-4 md:pt-0">
-        <div className="flex items-center justify-center px-5">
+      <div className="h-screen bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-700 via-pink-500 to-red-500 flex flex-col items-center pt-8 md:pt-14 lg:pt-14">
+        <div className="flex items-center justify-center px-4">
           <Logo />
         </div>
         <div className="flex justify-center mt-2 md:mt-10">
