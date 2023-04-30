@@ -10,12 +10,14 @@ const HomePage: React.FC = () => {
       <div
         className="
           h-screen
-          flex flex-col items-center justify-center
+          flex flex-col items-center justify-start
           bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-700 via-pink-500 to-red-500
           px-4 // Add padding on the x-axis for small screens
         "
       >
-        <Logo />
+        <div className="lg:pt-14 sm:pt-4">
+          <Logo />
+        </div>
         <div className="font-bold	italic mt-8 mb-4 text-2xl md:text-2xl lg:text-4xl">
           Find your way.
         </div>
@@ -37,9 +39,7 @@ const HomePage: React.FC = () => {
         </div>
         <div className="pt-3">
           <p>
-            <Link href="/terms">
-              Terms of Service
-            </Link>
+            <Link href="/terms">Terms of Service</Link>
           </p>
         </div>
       </div>
