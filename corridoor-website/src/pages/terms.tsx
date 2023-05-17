@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import { Fragment } from "react";
 import Logo from "@/components/imageComponents/logo";
+import FloatingMenu from "@/components/allPages/floatingMenu";
+
 interface PrivacyProps {
   message?: string;
 }
@@ -11,6 +13,7 @@ const Terms: React.FC<PrivacyProps> = ({
 }) => {
   return (
     <Fragment>
+      <FloatingMenu />
       <div className="h-screen bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-700 via-pink-500 to-red-500 flex flex-col items-center pt-8 md:pt-14 lg:pt-14">
         <div className="flex items-center justify-center px-4">
           <Logo />

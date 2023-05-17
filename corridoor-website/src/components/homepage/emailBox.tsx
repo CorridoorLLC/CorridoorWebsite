@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { db } from "../api/firebase";
+import { db } from "../../api/firebase";
 import { collection, addDoc, query, where, getDocs } from "firebase/firestore";
 
 const EmailBox: React.FC = () => {
