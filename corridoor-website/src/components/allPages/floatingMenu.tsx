@@ -1,38 +1,43 @@
-import React, { useState } from 'react';
-import { useRouter } from 'next/router';
+import React, { useState } from "react";
+import { useRouter } from "next/router";
 
 const FloatingMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
 
   const handleTermsClick = () => {
-    router.push('/terms');
+    router.push("/terms");
+  };
+
+  const handleSignupClick = () => {
+    router.push("/signup");
   };
 
   return (
-    <div className="fixed top-4 md:top-8 right-4">
+    <div className="fixed top-0 right-0 left-0 z-10 md:top-4 md:right-4 md:left-auto">
       <button
-        className="bg-violet-500 hover:bg-violet-700 text-white font-bold py-2 px-4 rounded transition-colors duration-200 border border-white border-2"
+        className="w-full text-white bg-violet-500 font-bold py-2 px-4 md:w-auto md:rounded hover:bg-violet-700 transition-colors duration-200 border border-white border-2 text-left md:text-center"
         onClick={() => setIsOpen(!isOpen)}
       >
         Menu
       </button>
       <div
-        className={`absolute mt-2 bg-white shadow-md rounded-lg w-32 right-0 transition-opacity duration-300 ${
-          isOpen ? 'opacity-100' : 'opacity-0'
-        } ${!isOpen ? 'pointer-events-none' : ''} border border-black`}
+        className={`overflow-hidden transition-max-height duration-300 ease-in-out md:absolute md:right-0 md:mt-2 md:w-32 bg-white shadow-md ${
+          isOpen ? "border-b border-black md:rounded-lg max-h-60 md:max-h-32" : "max-h-0"
+        }`}
       >
         <ul>
-          <li
-            className="hover:bg-blue-100 duration-200 hover:rounded-lg text-black cursor-pointer px-5 py-2 transition-colors duration-200"
-            onClick={handleTermsClick}
-          >
-            Terms
-          </li>
-          <li className="hover:bg-blue-100 duration-200 hover:rounded-lg text-black cursor-pointer px-5 py-2 transition-colors duration-200">
+
+          <li className="hover:bg-blue-100 duration-200 text-black cursor-pointer px-5 py-2 transition-colors duration-200">
             Login
           </li>
-          <li className="hover:bg-blue-100 duration-200 hover:rounded-lg text-black cursor-pointer px-5 py-2 transition-colors duration-200">
+          <li
+            className="hover:bg-blue-100 duration-200 text-black cursor-pointer px-5 py-2 transition-colors duration-200"
+            onClick={handleSignupClick}
+          >
+            Sign Up
+          </li>
+          <li className="hover:bg-blue-100 duration-200 text-black cursor-pointer px-5 py-2 transition-colors duration-200">
             About Us
           </li>
         </ul>
