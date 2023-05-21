@@ -9,8 +9,12 @@ const FloatingMenu = () => {
     router.push("/terms");
   };
 
-  const handleSignupClick = () => {
-    router.push("/signup");
+  const handleLoginClick = () => {
+    router.push("/login");
+  };
+
+  const handleAboutUsClick = () => {
+    router.push("/aboutus");
   };
 
   return (
@@ -28,16 +32,14 @@ const FloatingMenu = () => {
       >
         <ul>
 
-          <li className="hover:bg-blue-100 duration-200 text-black cursor-pointer px-5 py-2 transition-colors duration-200">
+          <li className="hover:bg-blue-100 duration-200 text-black cursor-pointer px-5 py-2 transition-colors duration-200"
+          onClick={handleLoginClick}
+          >
             Login
           </li>
-          <li
-            className="hover:bg-blue-100 duration-200 text-black cursor-pointer px-5 py-2 transition-colors duration-200"
-            onClick={handleSignupClick}
+          <li className="hover:bg-blue-100 duration-200 text-black cursor-pointer px-5 py-2 transition-colors duration-200"
+            onClick={handleAboutUsClick}
           >
-            Sign Up
-          </li>
-          <li className="hover:bg-blue-100 duration-200 text-black cursor-pointer px-5 py-2 transition-colors duration-200">
             About Us
           </li>
         </ul>
