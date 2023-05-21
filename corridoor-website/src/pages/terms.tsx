@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import { Fragment } from "react";
 import Logo from "@/components/imageComponents/logo";
 import FloatingMenu from "@/components/allPages/floatingMenu";
-
+import Footer from "@/components/allPages/footer";
+import { Fragment } from "react";
 interface PrivacyProps {
   message?: string;
 }
@@ -13,25 +13,28 @@ const Terms: React.FC<PrivacyProps> = ({
 }) => {
   return (
     <Fragment>
-      <FloatingMenu />
-      <div className="h-screen bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-700 via-pink-500 to-red-500 flex flex-col items-center pt-8 md:pt-14 lg:pt-14">
-        <div className="flex items-center justify-center px-4">
-          <Logo />
-        </div>
-        <div className="flex justify-center mt-2 md:mt-10">
-          <div className="text-black bg-white p-4 md:p-8 rounded-lg shadow-lg w-full mx-3 mt-5 md:max-w-3xl lg:max-w-6xl">
-            <h1 className="text-xl md:text-2xl text-black bg-center font-bold mb-4">
-              Terms and Conditions
-            </h1>
-            <p className="text-sm md:text-base text-black">
-              {message}{" "}
-              <Link className="font-bold" href="/">
-                Go Back.
-              </Link>
-            </p>
+      <div className="min-h-screen flex flex-col justify-between bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-700 via-pink-500 to-red-500">
+        <FloatingMenu />
+        <div className="flex flex-col items-center pt-8 md:pt-14 lg:pt-14">
+          <div className="flex items-center justify-center px-4 pt-16">
+            <Logo />
+          </div>
+          <div className="flex pt-16 justify-center mt-2 md:mt-10">
+            <div className="text-black bg-white p-4 md:p-8 rounded-lg shadow-lg w-full mx-3 mt-5 md:max-w-3xl lg:max-w-6xl">
+              <h1 className="text-xl md:text-2xl text-black bg-center font-bold mb-4">
+                Terms and Conditions
+              </h1>
+              <p className="text-sm md:text-base text-black">
+                {message}{" "}
+                <Link className="font-bold" href="/">
+                  Go Back.
+                </Link>
+              </p>
+            </div>
           </div>
         </div>
       </div>
+      <Footer />
     </Fragment>
   );
 };
