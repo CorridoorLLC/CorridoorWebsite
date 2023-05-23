@@ -14,7 +14,7 @@ const HomePage: React.FC = () => {
         <div className="font-bold	italic mt-8 mb-4 text-2xl md:text-2xl text-gray-200 lg:text-4xl">
           Find your way.
         </div>
-        <div className="mt-8 w-full md:w-3/4 lg:w-1/2 text-xl text-center px-10 md:text-1xl lg:text-3xl text-gray-100">
+        <div className="mt-8 w-full md:w-3/4 lg:w-1/2 text-xl font-medium text-center px-10 md:text-1xl lg:text-3xl text-white">
           Corridoor is an indoor navigation application that will be coming to
           the University of Michigan & beyond this upcoming school year! You
           will never be late to class again!
