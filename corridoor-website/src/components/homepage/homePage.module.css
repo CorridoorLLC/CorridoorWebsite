@@ -1,0 +1,15 @@
+.grow-shrink {
+  animation: grow-shrink 1s linear;
+}
+
+@keyframes grow-shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

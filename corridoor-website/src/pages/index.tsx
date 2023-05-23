@@ -11,18 +11,8 @@ export default function Home() {
   const router = useRouter();
   const currentPath = router.pathname;
 
-  const handleSignup = (
-    name: string,
-    lastname: string,
-    email: string,
-    phone: string,
-    password: string
-  ) => {
-    console.log("Signup with", name, lastname, email, phone, password);
-  };
-
   return (
-    <div className="flex flex-col justify-between min-h-screen radial-gradient(at right top, rgb(88, 28, 135), rgb(192, 38, 211), rgb(157, 23, 77))">
+    <div>
       <FloatingMenu />
       <div className="flex-grow">
         {currentPath === "/" && <HomePage />}
@@ -31,7 +21,7 @@ export default function Home() {
         {currentPath === "/login" && <Login />}
         {currentPath === "/aboutus" && <AboutUs />}
       </div>
-      <Footer />
+
     </div>
   );
 }

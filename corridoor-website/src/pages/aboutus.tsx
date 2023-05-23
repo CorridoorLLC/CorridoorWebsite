@@ -13,7 +13,7 @@ const AboutUs: React.FC = () => {
           <div className="flex items-center justify-center px-4 pt-14">
             <Logo />
           </div>
-          <div className="font-bold	italic mt-8 mb-4 text-2xl md:text-2xl lg:text-4xl">
+          <div className="font-bold italic mt-8 mb-4 text-2xl md:text-2xl text-gray-200 lg:text-4xl">
             Find your way.
           </div>
           <div className="flex justify-center mt-2 md:mt-10">

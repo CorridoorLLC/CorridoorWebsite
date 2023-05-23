@@ -20,7 +20,7 @@ const FloatingMenu = () => {
   return (
     <div className="fixed top-0 right-0 left-0 z-10 md:top-4 md:right-4 md:left-auto">
       <button
-        className="w-full text-white bg-violet-500 font-bold py-2 px-4 md:w-auto md:rounded hover:bg-violet-700 transition-colors duration-200 border border-white border-2 text-left md:text-center"
+        className="w-full text-white bg-violet-500 font-bold py-2 px-4 md:w-auto md:rounded hover:bg-violet-700 transition-colors duration-200 border border-2 text-left md:text-center"
         onClick={() => setIsOpen(!isOpen)}
       >
         Menu

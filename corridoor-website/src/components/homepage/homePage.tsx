@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import EmailBox from "./emailBox";
 import Logo from "../imageComponents/logo";
 import Link from "next/link";
-
+import Footer from "../allPages/footer";
 const HomePage: React.FC = () => {
   return (
     <Fragment>
@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
         <div className="md:pt-14 sm:pt-8 pt-10">
           <Logo />
         </div>
-        <div className="font-bold	italic mt-8 mb-4 text-2xl md:text-2xl lg:text-4xl">
+        <div className="font-bold	italic mt-8 mb-4 text-2xl md:text-2xl text-gray-200 lg:text-4xl">
           Find your way.
         </div>
         <div className="mt-8 w-full md:w-3/4 lg:w-1/2 text-xl text-center px-10 md:text-1xl lg:text-3xl text-gray-100">
@@ -28,6 +28,7 @@ const HomePage: React.FC = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </Fragment>
   );
 };

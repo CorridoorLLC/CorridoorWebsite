@@ -7,12 +7,25 @@ import { initFireBase } from "@/api/firebase";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import Image from "next/image";
 import googleLogo from "public/googleLogin.png";
+import { useAuthState } from "react-firebase-hooks/auth";
+import pageTemplate from "@/components/allPages/pageTemplate";
 const Login = () => {
+
   //initialize firebase app
   initFireBase();
+
   //create instances for firebase auth
   const provider = new GoogleAuthProvider();
   const auth = getAuth();
+
+  //get authorization status
+  const [user, loading] = useAuthState(auth);
+
+
+  if(loading){
+    return <div>loading</div>;
+  }
+
   const googleSignIn = async () => {
     const result = await signInWithPopup(auth, provider);
     console.log(result.user);
@@ -26,7 +39,7 @@ const Login = () => {
           <div className="flex items-center justify-center px-4 pt-14">
             <Logo />
           </div>
-          <div className="font-bold italic mt-8 mb-4 text-2xl md:text-2xl lg:text-4xl">
+          <div className="font-bold italic mt-8 mb-4 text-2xl md:text-2xl text-gray-200 lg:text-4xl">
             Find your way.
           </div>
           <div className="flex justify-center mt-2 md:mt-10">
@@ -49,6 +62,7 @@ const Login = () => {
         </div>
       </div>
       <Footer />
+
     </Fragment>
   );
 };
