@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import HomePage from "../components/homepage/homePage";
+import HomePage from "@/components/homepage/homePage";
 import Dashboard from "./dashboard";
 import Terms from "./terms";
 import FloatingMenu from "@/components/allPages/floatingMenu";

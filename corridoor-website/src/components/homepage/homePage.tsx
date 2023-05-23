@@ -2,13 +2,12 @@ import React from "react";
 import { Fragment } from "react";
 import EmailBox from "./emailBox";
 import Logo from "../imageComponents/logo";
-import Link from "next/link";
 import Footer from "../allPages/footer";
 const HomePage: React.FC = () => {
   return (
     <Fragment>
-      <div className="pt-14 md:pt-14 lg:pt-8 h-screen flex flex-col items-center justify-start bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-700 via-pink-500 to-red-500 px-4">
-        <div className="md:pt-14 sm:pt-8 pt-10">
+      <div className="pt-16 md:pt-14 lg:pt-8 h-screen flex flex-col items-center justify-start bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-700 via-pink-500 to-red-500 px-4">
+        <div className="md:pt-16 sm:pt-10">
           <Logo />
         </div>
         <div className="font-bold	italic mt-8 mb-4 text-2xl md:text-2xl text-gray-200 lg:text-4xl">
