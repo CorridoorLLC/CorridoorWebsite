@@ -8,7 +8,6 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import Image from "next/image";
 import googleLogo from "public/googleLogin.png";
 import { useAuthState } from "react-firebase-hooks/auth";
-import pageTemplate from "@/components/allPages/pageTemplate";
 const Login = () => {
 
   //initialize firebase app
