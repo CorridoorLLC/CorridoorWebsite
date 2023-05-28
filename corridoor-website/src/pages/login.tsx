@@ -8,23 +8,29 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import Image from "next/image";
 import googleLogo from "public/googleLogin.png";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { useRouter } from "next/router";
 const Login = () => {
-
   //initialize firebase app
   initFireBase();
 
   //create instances for firebase auth
   const provider = new GoogleAuthProvider();
   const auth = getAuth();
+  const router = useRouter();
 
   //get authorization status
   const [user, loading] = useAuthState(auth);
 
-
-  if(loading){
+  if (loading) {
     return <div>loading</div>;
   }
 
+  //login rendering
+  if (user) {
+    router.push("/dashboard");
+    //render dashboard if user is logged in
+    return <div>Welcome {user.displayName}</div>;
+  }
   const googleSignIn = async () => {
     const result = await signInWithPopup(auth, provider);
     console.log(result.user);
@@ -61,7 +67,6 @@ const Login = () => {
         </div>
       </div>
       <Footer />
-
     </Fragment>
   );
 };

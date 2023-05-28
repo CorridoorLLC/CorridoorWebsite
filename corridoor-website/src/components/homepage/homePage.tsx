@@ -6,7 +6,7 @@ import Footer from "../allPages/footer";
 const HomePage: React.FC = () => {
   return (
     <Fragment>
-      <div className="pt-16 md:pt-14 lg:pt-8 h-screen flex flex-col items-center justify-start bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-700 via-pink-500 to-red-500 px-4">
+      <div className="pt-16 md:pt-16 lg:pt-10 h-screen flex flex-col items-center justify-start bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-700 via-pink-500 to-red-500 px-4">
         <div className="md:pt-16 sm:pt-10">
           <Logo />
         </div>
