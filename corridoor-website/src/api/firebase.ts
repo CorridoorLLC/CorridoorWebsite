@@ -2,6 +2,8 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -28,6 +30,7 @@ const auth = getAuth(app);
 
 export { db, storage, auth };
 
+//Export the firebase application
 export const initFireBase = () => {
   return app;
 }

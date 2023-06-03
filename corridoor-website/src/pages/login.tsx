@@ -27,6 +27,7 @@ const Login = () => {
 
   //login rendering
   if (user) {
+    console.log(user);
     router.push("/dashboard");
     //render dashboard if user is logged in
     return <div>Welcome {user.displayName}</div>;

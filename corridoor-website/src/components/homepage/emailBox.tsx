@@ -10,6 +10,8 @@ const EmailBox: React.FC = () => {
   };
 
   const handleSubmit = async (event: React.FormEvent) => {
+
+    //stops page from refreshing
     event.preventDefault();
 
     // Check if the input text is empty
