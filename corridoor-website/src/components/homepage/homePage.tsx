@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
           will never be late to class again!
         </div>
         <div className="mt-8 md:mt-12 lg:mt-16 bg-white p-4 rounded-md">
-          <div className="font-bold	 underline underline-offset-8 text-2xl md:text-2xl lg:text-4xl text-black justify-center flex items-center">
+          <div className="font-extrabold pt-2 text-2xl md:text-2xl lg:text-4xl text-black justify-center flex items-center">
             Join The Waitlist
           </div>
           <div className="mt-2 md:mt-4 lg:mt-6 w-full md:w-auto">

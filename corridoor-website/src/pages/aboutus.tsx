@@ -7,7 +7,7 @@ import Footer from "@/components/allPages/footer";
 const AboutUs: React.FC = () => {
   return (
     <Fragment>
-      <div className="min-h-screen flex flex-col justify-between bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-700 via-pink-500 to-red-500 pb-20">
+      <div className="min-h-screen flex flex-col bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-700 via-pink-500 to-red-500 pb-10">
         <FloatingMenu />
         <div className="flex flex-col items-center pt-8 md:pt-14 lg:pt-14">
           <div className="flex items-center justify-center px-4 pt-14">
@@ -24,7 +24,9 @@ const AboutUs: React.FC = () => {
               <hr className="border-t-2 border-gray-300 my-8" />
 
               <div>
-                <h2 className="text-lg md:text-xl font-bold mb-2">Our Mission</h2>
+                <h2 className="text-lg md:text-xl font-bold mb-2">
+                  Our Mission
+                </h2>
                 <p className="text-sm md:text-base mb-4">
                   Our mission is to make finding anything inside a building easy
                   for you. We are building an infrastructure to make finding
@@ -35,19 +37,24 @@ const AboutUs: React.FC = () => {
               <div>
                 <h2 className="text-lg md:text-xl font-bold mb-2">Our Team</h2>
                 <p className="text-sm md:text-base mb-4">
-                  Our team consists of 2 engineers, Dev Kunjadia and Kevin Wang. We came up with the idea for Corridoor while brainstorming random problems we had. And now we are building it!
+                  Our team consists of 2 leads: Dev Kunjadia and Kevin Wang, and 1 software engineer: Riya Sharma.
+                  We came up with the idea for Corridoor while brainstorming
+                  random problems we had. And now we are building it!
                 </p>
               </div>
               <div>
-                <h2 className="text-lg md:text-xl font-bold mb-2">Our Launch</h2>
+                <h2 className="text-lg md:text-xl font-bold mb-2">
+                  Our Launch
+                </h2>
                 <p className="text-sm md:text-base mb-4">
-                  We plan to reach the University of Michigan campus this upcoming fall, and after that go wherever the world takes us!
+                  We plan to reach the University of Michigan campus this
+                  upcoming fall, and after that go wherever the world takes us!
                 </p>
               </div>
               <hr className="border-t-2 border-gray-300 my-8" />
-
-              <Link href="/" className="text-blue-500 hover:text-blue-800">Go Back</Link>
-
+              <Link href="/" className="text-blue-500 hover:text-blue-800">
+                Go Back
+              </Link>
             </div>
           </div>
         </div>

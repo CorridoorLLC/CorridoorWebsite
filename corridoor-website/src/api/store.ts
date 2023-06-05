@@ -11,8 +11,13 @@ type Store = {
 export const useStore = create<Store>((set) => ({
   nameOfUser: null,
   emailOfUser: null,
-  setUser: (nameOfUser) => set({ nameOfUser }),
-  setEmail: (emailOfUser) => set({ emailOfUser }),
+  setUser: (nameOfUser) => {
+    console.log("setting user");
+    set(prevState => {
+      return {...prevState, nameOfUser: nameOfUser};
+    });
+  },
+  setEmail: (emailOfUser) => (set({ emailOfUser })),
   clearUser: () => (
     console.log("clearing user"),
     set({ nameOfUser: null, emailOfUser: null })),

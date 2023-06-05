@@ -1,8 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-
+import { Fragment } from 'react';
 const Footer: React.FC = () => {
     return (
+        <Fragment>
         <footer className="border-t-4 border-indigo-500 bg-white bg-opacity-70 text-center text-xs p-3 w-full">
             <div className="flex justify-center items-center space-x-4">
                 <div>
@@ -19,6 +20,8 @@ const Footer: React.FC = () => {
                 </div>
             </div>
         </footer>
+        </Fragment>
+
     );
 };
 
