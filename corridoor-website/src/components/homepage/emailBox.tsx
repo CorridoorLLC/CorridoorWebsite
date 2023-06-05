@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { db } from "../api/firebase";
+import { db } from "../../api/firebase";
 import { collection, addDoc, query, where, getDocs } from "firebase/firestore";
 
 const EmailBox: React.FC = () => {
@@ -10,6 +10,8 @@ const EmailBox: React.FC = () => {
   };
 
   const handleSubmit = async (event: React.FormEvent) => {
+
+    //stops page from refreshing
     event.preventDefault();
 
     // Check if the input text is empty

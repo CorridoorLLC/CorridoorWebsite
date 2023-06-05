@@ -14,5 +14,17 @@ module.exports = {
       },
     },
   },
+  theme: {
+    extend: {
+      backgroundImage: (theme) => ({
+         'radial-gradient': "radial-gradient(ellipse at top right, var(--tw-gradient-stops))",
+      }),
+      colors: {
+        'gradient-from': '#7b02a1',
+        'gradient-via': '#ff61a6',
+        'gradient-to': '#e60000',
+      },
+    },
+  },
   plugins: [],
 }

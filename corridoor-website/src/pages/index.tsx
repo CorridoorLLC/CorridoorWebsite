@@ -1,19 +1,29 @@
-import HomePage from '../components/homepage/homePage';
-import { useRouter } from 'next/router';
-import Dashboard from './dashboard';
-import Terms from './terms';
-export default function Home() {
-  // Use the useRouter hook to access the router object
-  const router = useRouter();
+import { useRouter } from "next/router";
+import HomePage from "@/components/homepage/homePage";
+import Dashboard from "./waitlist";
+import Terms from "./terms";
+import FloatingMenu from "@/components/allPages/floatingMenu";
+import Login from "./login";
+import AboutUs from "./aboutus";
+import Footer from "@/components/allPages/footer";
 
-  // Get the current pathname from the router object
+export default function Home() {
+  const router = useRouter();
   const currentPath = router.pathname;
 
   return (
-    <div className="radial-gradient(at right top, rgb(88, 28, 135), rgb(192, 38, 211), rgb(157, 23, 77))">
-      {currentPath === '/' && <HomePage />}
-      {currentPath === '/dashboard' && <Dashboard />}
-      {currentPath === '/terms' && <Terms />}
+    <div>
+      <FloatingMenu />
+      <div className="flex-grow">
+        {currentPath === "/" && <HomePage />}
+        {currentPath === "/dashboard" && <Dashboard />}
+        {currentPath === "/terms" && <Terms />}
+        {currentPath === "/login" && <Login />}
+        {currentPath === "/aboutus" && <AboutUs />}
+      </div>
+
     </div>
   );
 }
+
+
