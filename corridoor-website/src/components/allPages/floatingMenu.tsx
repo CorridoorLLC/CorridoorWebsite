@@ -77,12 +77,6 @@ const FloatingMenu = () => {
           >
             About Us
           </a>
-          <a
-            onClick={handleAboutUsClick}
-            className="cursor-pointer block mt-4 lg:inline-block lg:mt-0 text-indigo-500 hover:font-bold hover:duration-500 mr-4"
-          >
-            Products
-          </a>
         </div>
         <div>
           {isSignedIn ? (
