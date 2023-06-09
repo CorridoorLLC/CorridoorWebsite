@@ -20,7 +20,9 @@ const FloatingMenu = () => {
   const handleLoginClick = () => {
     router.push("/login");
   };
-
+  const handleCustomerClick = () => {
+    router.push("/customerSignUp");
+  };
   const handleLogoutClick = () => {
     auth
       .signOut()
@@ -76,6 +78,12 @@ const FloatingMenu = () => {
             className="cursor-pointer block mt-4 lg:inline-block lg:mt-0 text-indigo-500 hover:font-bold hover:duration-500 mr-4"
           >
             About Us
+          </a>
+          <a
+            onClick={handleCustomerClick}
+            className="cursor-pointer block mt-4 lg:inline-block lg:mt-0 text-indigo-500 hover:font-bold hover:duration-500 mr-4"
+          >
+            Customer Interest Form
           </a>
         </div>
         <div>

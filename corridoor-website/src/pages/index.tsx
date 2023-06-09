@@ -5,8 +5,7 @@ import Terms from "./terms";
 import FloatingMenu from "@/components/allPages/floatingMenu";
 import Login from "./login";
 import AboutUs from "./aboutus";
-import Footer from "@/components/allPages/footer";
-
+import CustomerSignUp from "./customerSignUp";
 export default function Home() {
   const router = useRouter();
   const currentPath = router.pathname;
@@ -20,6 +19,8 @@ export default function Home() {
         {currentPath === "/terms" && <Terms />}
         {currentPath === "/login" && <Login />}
         {currentPath === "/aboutus" && <AboutUs />}
+        {currentPath === "/aboutus" && <AboutUs />}
+        {currentPath === "/customerSignUp" && <CustomerSignUp />}
       </div>
 
     </div>

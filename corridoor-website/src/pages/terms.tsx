@@ -13,7 +13,7 @@ const Terms: React.FC<PrivacyProps> = ({
 }) => {
   return (
     <Fragment>
-      <div className="min-h-screen flex flex-col justify-between bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-700 via-pink-500 to-red-500">
+      <div className="min-h-screen flex flex-col bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-700 via-pink-500 to-red-500 pb-10">
         <FloatingMenu />
         <div className="flex flex-col items-center pt-8 md:pt-14 lg:pt-14">
           <div className="flex items-center justify-center px-4 pt-16">
